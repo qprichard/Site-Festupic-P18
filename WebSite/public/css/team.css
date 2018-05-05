@@ -1,0 +1,114 @@
+html {
+  font-size: 62.5%;
+}
+
+body{
+    background-color : #25201E;
+
+}
+.carousel .slide
+{
+  background-color : #25201E;
+
+}
+
+
+.item .active .row
+{
+  text-align:center;
+}
+
+.carousel-control:hover{
+  opacity:1;
+  background-color :  transparent;
+}
+
+
+.carousel-control{
+  opacity:0;
+}
+
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.our-team{
+  text-align: center;
+  padding : 20px;
+}
+.our-team .pic{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.our-team .pic:before,
+.our-team .pic:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #25201E;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.our-team .pic:after{
+    border-color:rgba(194,34,39, 1) white white rgba(194,34,39, 1);
+    z-index: 1;
+    transform: rotate(-10deg);
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic:after{
+  transform: rotate(350deg);
+}
+
+.our-team:hover img{
+  opacity : 0.3;
+}
+
+.our-team:hover .middle{
+  opacity : 1;
+}
+
+
+.our-team img{
+    width: 100%;
+    height: auto;
+}
+.our-team .title{
+      font-family: 'Matura MT Script Capitals';
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 10px;
+    margin: 15px 0 10px 0;
+    position: relative;
+}
+.our-team .title:after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: white;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.our-team .post{
+    font-family: 'High Tower Text';
+    color : white;
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+
+}
